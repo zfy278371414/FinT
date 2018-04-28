@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+        <head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta name='description' content='帆天国际'>
+                <meta name='keywords' content='帆天国际'>
+                <meta name='author' content='帆天国际'>
+                <meta content=''>
+                <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+                <title>帆天国际</title>
+                <style>
+                    h1,h2,h3{
+                        margin-bottom:20px!important;
+                        
+                    }
+                </style>
+                <!-- Bootstrap -->
+                <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+        
+                <!-- Optional theme -->
+                <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-theme.min.css">
+                <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=AufmnPFxvKm3TPSfw8T7HXj9PIrewvEM"></script>
+                <!-- Custom css -->
+                <link rel="stylesheet" href="assets/css/style.css">
+                <link rel="stylesheet" href='assets/css/default.css'>
+                <!-- Font Awesome -->
+                <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+                
+                <link rel="stylesheet" href="assets/css/ionicons.min.css">
+                
+                <!-- Flexslider -->
+                <link rel="stylesheet" href="assets/css/flexslider.css">
+                
+                <!-- Owl -->
+                <link rel="stylesheet" href="assets/css/owl.carousel.css">
+                
+                <!-- Magnific Popup -->
+                <link rel="stylesheet" href="assets/css/magnific-popup.css">
+                <link rel='stylesheet' href='assets/fonts/iconfont/iconfont.css'
+                
+        
+                <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+                <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+                <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+                <![endif]-->
+            </head>
+            <body>
+              
+                <!--  loader  -->
+                <div id="myloader">
+                    <!-- <div class="loader">
+                        <div class="grid">
+                            <div class="cube cube1"></div>
+                            <div class="cube cube2"></div>
+                            <div class="cube cube3"></div>
+                            <div class="cube cube4"></div>
+                            <div class="cube cube5"></div>
+                            <div class="cube cube6"></div>
+                            <div class="cube cube7"></div>
+                            <div class="cube cube8"></div>
+                            <div class="cube cube9"></div>
+                        </div>
+                    </div> -->
+                    <div class="loadEffect">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                    </div>
+                </div>
+                
+                <!--  Header & Menu  -->
+                <header id="header">
+            
+                        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                                <div class="container" style='position:relative'>
+                                    <!-- Brand and toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed clickTab" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" isShow='false'>
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            
+                                        </button>
+                                        <a class="navbar-brand" href="#" style="color:white;"><font face="Microsoft YaHei">FinT 帆天国际</font></a>
+                                    </div>
+                                    <div class='toggleTab' style='display:none;position:absoluted;top:50px;right:0;width:200px;background:#222'>
+                                            <ul class="nav navbar-nav" style='margin:0'>
+                                                <li style='height:50px'>
+                                                    <a href="index.html"  ><font face="Microsoft YaHei">首页</font></a>
+                                                </li>
+                                               <li style="height:50px;"><a href="services1.html" style="text-decoration:none;" >基金中后台服务</a></li>			
+                                                        <li style="height:50px;"><a href="services2.html" style="text-decoration:none;">基金交易系统</a></li>
+                                                        <li style="height:50px;"><a href="services3.html" style="text-decoration:none;">软件定制开发</a></li>
+                                                        <li style="height:50px;"><a href="services4.html" style="text-decoration:none;">数字货币交易系统开发</a></li>
+                                                        <li style="height:50px;"><a href="services5.html" style="text-decoration:none;">记账报税,税务筹划</a></li>
+                                                        <li style="height:50px;"><a href="services6.html" style="text-decoration:none;color:rgb(247, 153, 57)">深圳入户代办</a></li>
+                                                   
+                                                <!-- <li>
+                                                        <a href="news.html" id="contactusBtn" style="color:white;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">新闻资讯</font></a>
+                                                </li> -->
+                                                
+                                                <li>
+                                                    <a href="about.html" id="aboutusBtn"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">关于我们</font></a>
+                                                </li>
+                                                <li>
+                                                    <a href="contact.html" id="contactusBtn"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">联系我们</font></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class="navbar-collapse collapse"  style="float: right; height: 1px;" aria-expanded="false">
+                                        <ul class="nav navbar-nav">
+                                            <li>
+                                                <a href="index.html" id="header-wrapperBtn" style="color: white;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">首页</font></a>
+                                            </li>
+                                            <li style="position:relative;z-index:2">
+                                                <a id="serviceBtn" style='color:rgb(247, 153, 57)' data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">服务提供</font></a>
+                                                <ol style="position: absolute; top: 50px; left: 0px; line-height: 50px; background: white; color: black; border-top: 5px solid rgb(247, 153, 57); display: none;">
+                                                   
+                                                    <li style="width:180px;height:50px;border-bottom:1px solid #ececec;padding-left:20px"><a href="services1.html" style="text-decoration:none;">基金中后台服务</a></li>			
+                                                    <li style="width:180px;height:50px;border-bottom:1px solid #ececec;padding-left:20px"><a href="services2.html" style="text-decoration:none;">基金交易系统</a></li>
+                                                    <li style="width:180px;height:50px;border-bottom:1px solid #ececec;padding-left:20px"><a href="services3.html" style="text-decoration:none;">软件定制开发</a></li>
+                                                    <li style="width:180px;height:50px;border-bottom:1px solid #ececec;padding-left:20px"><a href="services4.html" style="text-decoration:none;">数字货币交易系统开发</a></li>
+                                                    <li style="width:180px;height:50px;border-bottom:1px solid #ececec;padding-left:20px"><a href="services5.html" style="text-decoration:none;">记账报税,税务筹划</a></li>
+                                                    <li style="width:180px;height:50px;border-bottom:1px solid #ececec;padding-left:20px"><a href="services6.html" style="text-decoration:none;color:rgb(247, 153, 57)">深圳入户代办</a></li>
+                                                </ol>
+                                            </li>
+                                            <!-- <li>
+                                                    <a href="news.html" id="contactusBtn" style="color:white;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">新闻资讯</font></a>
+                                            </li> -->
+                                            
+                                            <li>
+                                                <a href="about.html" id="aboutusBtn" style="color:white;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">关于我们</font></a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html" id="contactusBtn" style="color:white;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">联系我们</font></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                   
+                                    <!-- /.navbar-collapse -->
+                                </div>
+                                <!-- /.container -->
+                            </nav>
+                    
+                </header>
+        <!--  END Header & Menu  -->
+            
+        <!--  Main Wrap  -->
+        <div id="main-wrap">
+            <!--  Page Content  -->
+            <div id="page-content" class="header-static">
+                <!--  Page Header  -->
+                <div id="page-header" class="secondary-background">
+                    <div class="container">
+                        <div class="row no-margin">
+                            <div class="text" style='text-align:center'>
+                                <h4 class="white " style='text-align:left'>服务提供</h4>
+                                <!-- <ul class="breadcrumb white">
+                                    <li><a href="#">网站首页</a></li>
+                                    <li>服务提供</li>
+                                </ul> -->
+                                <h2 class='white' style='margin-top:20px'>深圳入户代办</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  END Page Header  -->
+                <div id="home-wrap" class="content-section fullpage-wrap service-main">
+                   
+                    <div class='container hukoudaiban'>
+                        <ol>
+                            <h3>2018年入深户主要变化</h3>
+                            
+                            <li><i class='iconfont'>&#xe75c;</i>取消房产，居住证加分</li>
+                            <li><i class='iconfont'>&#xe75c;</i>社保每年7分，封顶30分</li>
+                            <li><i class='iconfont'>&#xe75c;</i>献血，捐款均不加分</li>
+                            <li><i class='iconfont'>&#xe75c;</i>取消营养师，电子商务师，客户服务管理师等以前常用加分工种</li>
+                            <li><i class='iconfont'>&#xe75c;</i>公司申报要求在公司连续缴纳24个月的工伤保险</li>
+                            <li><i class='iconfont'>&#xe75c;</i>所以职业资格证书要求发证后1年才能积分</li>
+                            <li><i class='iconfont'>&#xe75c;</i>企业长期不报税，税务局将上门查账</li>
+                            <li><i class='iconfont'>&#xe75c;</i>年龄由最高48岁降为45岁</li>
+                            <li><i class='iconfont'>&#xe75c;</i>个人所得税起跳为7.6万</li>
+                        </ol>
+                        
+                            <h3>不同人群入户方案</h3>
+                            <p>全日制大专学历及以上:</p>
+                            <p><i class='iconfont'>&#xe75c;</i>35岁以内直接入户</p>
+                            <p><i class='iconfont'>&#xe75c;</i>35岁以上学历值70分，可以社保加分+公司申报可以入户</p>
+                            <p>非全日制本科学历</p>
+                            <p><i class='iconfont'>&#xe75c;</i>学历值60分，高级紧缺工种20分，加社保或年龄+公司申报可以入户</p>
+                        
+                        
+                        
+                        
+                            <h3>办理深户要求：</h3>
+                            <p>入深户要求积分满足100分才有资格入深户，因此咨询时如实需说明你的具体情况，以便我们工作人员评估；咨询时请说明你的学历，年龄，婚育情况（有无结婚或离婚纪录，有无超生），在深圳缴交社保的情况（有无缴交社保纪录，缴交的时间，入深户首先必须要有社保，应届毕业生除外）。</p>
+                            <p>您只需准备好资料，剩下的事放心交给我们！</p>
+                            <h3>入户办理流程：</h3>
+                            <img style='width:50%;display:block;margin:0 auto;' src = 'assets/img/liuchengtu2.png'>
+                            
+                    
+                        <h3>入户深圳户口的优势：</h3>
+                        <table style='color:#757575'>
+                            <thead>
+                                <tr><td>政策福利</td>
+                                    <td>住房优先</td>
+                                    <td>读书便捷</td>
+                                    <td>其他福利</td>
+                                </tr>
+                                
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>享受优厚的养老福利和社会保险待遇</td>
+                                    <td>可申请经济适用房、微利房</td>
+                                    <td>子女上学费用低廉，享受政府各项补贴</td>
+                                    <td>港澳通行可享受一个星期一次的便利</td>
+                                </tr>
+                                <tr>
+                                    <td>可享受失业补助、免费技能培训、推荐工作</td>
+                                    <td>可享受住房公积金</td>
+                                    <td>高考学生可在深报考，避免错失高考资格</td>
+                                    <td>享受各种求职/贷款等便利待遇</td>
+                                </tr>
+                                <tr>
+                                    <td>享受大病保障，住院医疗费用接近全部报销</td>
+                                    <td>就业可免除深户担忧的困扰</td>
+                                    <td>可优先就读名牌学校免积分排队</td>
+                                    <td>公务员、政府职员、雇员考试、有限录用</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>收费说明</h3>
+                        <p>可在线支付，也可在公司现场签约付款。</p>
+                        <p>签合同后公司会有专员同你对接，安排你在什么时间办什么事情。你无需担心忘记或者不知道要做什么，全程我们陪同办理事情，让你坐享其成。</p>
+                        
+                    </div>
+
+
+                   <div class='fintOther' style='padding:30px 0'>
+                        <div class='container '>
+                                <h4 style='margin-bottom:20px'><b>售后保障:</b></h4>
+                                <p>我们的承诺:</p>
+                                <p>关于服务质量的反馈，我们会在第一时间专人处理。保证及时解决您的问题。</p>
+                                <p>处理流程:</p>
+                                <p>服务中心遇到困难→使用在线旺旺/客服热线电话等方式联系我们→平台核实情况并立马处理</p>
+                                <h4 style='margin-bottom:20px'><b>温馨提示:</b></h4>
+                                <P>请尊重我们的劳动，工作人员付出的时间与心血无法像实物那样退货，如果您有不满意的地方，在您的配合下，我们会尽力改到您满意为止。</P>
+                                <p>由于系统开发、项目管理等产品属于定制产品，不同客户要求不同，产品价格不同、功能配置等也有所不同，故套餐内容均有所不同，页面介绍仅供参考，具体套餐内容请详询客服，以与客服沟通的聊天记录为准。</p>
+                                <p>部分产品支持一定期限内退款，部分产品不支持退款，具体详询客服！</p>
+                            </div>
+                   </div>
+                   
+                    <!-- Section Partners -->
+                    <div class="container">
+                        <div class="row no-margin">
+                            <div class="col-md-12 padding-leftright-null">
+                                <div class="partners">
+                                    <div class="col-xs-6 col-sm-4 col-md-2 text padding-leftright-null">
+                                        <h3>我们的客户</h3>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-2 partner">
+                                        <img class="img-responsive" src="assets/img/kehu1.png" alt="">
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-2 partner">
+                                        <img class="img-responsive" src="assets/img/kehu2.png" alt="">
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-2 partner">
+                                        <img class="img-responsive" src="assets/img/kehu3.png" alt="">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Section Partners -->
+                </div>
+            </div>
+            <!--  END Page Content -->
+        </div>
+        <!--  Main Wrap  -->
+        
+
+        <!--  Footer  -->
+        <img href="#" src="assets/img/arrowUP.png" class="scrollToTop" ></img>
+
+        <div id="copyright" class="container" style='width:100%;'>
+            <p>&copy; 版权所有：前海帆天国际科技(深圳)有限公司  粤ICP备. <a href="http://www.miitbeian.gov.cn/">17023249号</a>.</p>
+        </div>
+        <!--  END Footer. Class fixed for fixed footer  -->
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- All js library -->
+        <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.flexslider-min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/isotope.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!---<script src="http://ditu.google.cn/maps/api/js?v=3.exp&signed_in=false"></script>--->
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <script src="assets/js/smooth.scroll.min.js"></script>
+        <script src="assets/js/jquery.appear.js"></script>
+        <script src="assets/js/jquery.countTo.js"></script>
+        <script src="assets/js/jquery.scrolly.js"></script>
+        <script src="assets/js/plugins-scroll.js"></script>
+        <script src="assets/js/imagesloaded.min.js"></script>
+        <script src="assets/js/pace.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
+

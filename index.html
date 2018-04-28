@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name='description' content='帆天国际'>
+        <meta name='keywords' content='帆天国际'>
+        <meta name='author' content='帆天国际'>
+        
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>帆天国际</title>
+        <style>
+            h1,h2,h3{
+                margin-bottom:20px!important;
+            }
+        </style>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-theme.min.css">
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=AufmnPFxvKm3TPSfw8T7HXj9PIrewvEM"></script>
+        <!-- Custom css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href='assets/css/default.css'>
+        <!-- Font Awesome 图标字体库-->
+        <!-- <link rel="stylesheet" href="assets/css/font-awesome.min.css"> -->
+        <!--ionic矢量图标-->
+        <!-- <link rel="stylesheet" href="assets/css/ionicons.min.css"> -->
+        
+        <!-- Flexslider轮播插件 -->
+        <!-- <link rel="stylesheet" href="assets/css/flexslider.css"> -->
+        
+        <!-- Owl 幻灯片插件-->
+        <!-- <link rel="stylesheet" href="assets/css/owl.carousel.css"> -->
+        
+        <!-- Magnific Popup 点击图片预览-->
+        <!-- <link rel="stylesheet" href="assets/css/magnific-popup.css"> -->
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+      
+        <!--  loader  -->
+        <div id="myloader">
+           
+            <div class="loadEffect">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+            </div>
+        </div>
+        
+        <!--  Header & Menu  -->
+        <header id="header">
+            
+                <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                        <div class="container" style='position:relative'>
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed clickTab" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" isShow='false'>
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    
+                                </button>
+                                <a class="navbar-brand" href="#" style="color:white;"><font face="Microsoft YaHei">FinT 帆天国际</font></a>
+                            </div>
+                            <div class='toggleTab' style='display:none;position:absoluted;top:50px;right:0;width:200px;background:#222'>
+                                    <ul class="nav navbar-nav" style='margin:0'>
+                                        <li style='height:50px'>
+                                            <a href="#" style='color:rgb(247, 153, 57)'><font face="Microsoft YaHei">首页</font></a>
+                                        </li>
+                                       <li style="height:50px;"><a href="services1.html" style="text-decoration:none;" >基金中后台服务</a></li>			
+                                                <li style="height:50px;"><a href="services2.html" style="text-decoration:none;">基金交易系统</a></li>
+                                                <li style="height:50px;"><a href="services3.html" style="text-decoration:none;">软件定制开发</a></li>
+                                                <li style="height:50px;"><a href="services4.html" style="text-decoration:none;">数字货币交易系统开发</a></li>
+                                                <li style="height:50px;"><a href="services5.html" style="text-decoration:none;">记账报税,税务筹划</a></li>
+                                                <li style="height:50px;"><a href="services6.html" style="text-decoration:none;">深圳入户代办</a></li>
+                                           
+                                        <!-- <li>
+                                                <a href="news.html" id="contactusBtn" style="color:white;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">新闻资讯</font></a>
+                                        </li> -->
+                                        
+                                        <li>
+                                            <a href="about.html" id="aboutusBtn"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">关于我们</font></a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html" id="contactusBtn"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">联系我们</font></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="navbar-collapse collapse"  style="float: right; height: 1px;" aria-expanded="false">
+                                <ul class="nav navbar-nav">
+                                    <li>
+                                        <a href="#" id="header-wrapperBtn" style="color:rgb(247, 153, 57)" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">首页</font></a>
+                                    </li>
+                                    <li style="position:relative;z-index:2">
+                                        <a id="serviceBtn"  style='color:white' data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed " aria-expanded="false"><font face="Microsoft YaHei">服务提供</font></a>
+                                        <ol style="position: absolute; top: 50px; left: 0px; line-height: 50px; background: white; color: black; border-top: 5px solid rgb(247, 153, 57); display: none;">
+                                           
+                                            <li style="width:180px;height:50px;border-bottom:1px solid #ececec;padding-left:20px"><a href="services1.html" style="text-decoration:none;">基金中后台服务</a></li>			
+                                            <li style="width:180px;height:50px;border-bottom:1px solid #ececec;padding-left:20px"><a href="services2.html" style="text-decoration:none;">基金交易系统</a></li>
+                                            <li style="width:180px;height:50px;border-bottom:1px solid #ececec;padding-left:20px"><a href="services3.html" style="text-decoration:none;">软件定制开发</a></li>
+                                            <li style="width:180px;height:50px;border-bottom:1px solid #ececec;padding-left:20px"><a href="services4.html" style="text-decoration:none;">数字货币交易系统开发</a></li>
+                                            <li style="width:180px;height:50px;border-bottom:1px solid #ececec;padding-left:20px"><a href="services5.html" style="text-decoration:none;">记账报税,税务筹划</a></li>
+                                            <li style="width:180px;height:50px;border-bottom:1px solid #ececec;padding-left:20px"><a href="services6.html" style="text-decoration:none;">深圳入户代办</a></li>
+                                        </ol>
+                                    </li>
+                                    <!-- <li>
+                                            <a href="news.html" id="contactusBtn" style="color:white;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">新闻资讯</font></a>
+                                    </li> -->
+                                    
+                                    <li>
+                                        <a href="about.html" id="aboutusBtn" style="color:white;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">关于我们</font></a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html" id="contactusBtn" style="color:white;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">联系我们</font></a>
+                                    </li>
+                                </ul>
+                            </div>
+                           
+                            <!-- /.navbar-collapse -->
+                        </div>
+                        <!-- /.container -->
+                    </nav>
+            
+        </header>
+        <!--  END Header & Menu  -->
+            
+        <!--  Main Wrap  -->
+        <div id="main-wrap">
+            <!--  Page Content  -->
+            <div id="page-content" class="header-static">
+                <!--  Slider  -->
+                <div id="flexslider-nav" class="fullpage-wrap small">
+                    <ul class="slides">
+                        <li style="background-image:url(assets/img/header-bg.jpg)">
+                            <div class="text center">
+                                
+                                
+                                <div id="banner" class="container">
+                                        <div class='container' style="padding:5em 0em;position:relative">
+                                                <div id="logo">
+                                                        <h1 style='line-height:1'>
+                                                        <a href="#">
+                                                            <font face="Microsoft YaHei" color="#F79939">帆天<font color="#2651A8">国际 </font></font> 
+                                                        <br>
+                                                            <font color="#F79939">FinT<font color="#2651A8"> Group </font></font></a>
+                                                        </h1>
+                                                    </div>
+                                        </div>
+                                        <div class="title" >
+                                            <h2 style='line-height:1'>快速开发 敏捷定制</h2>
+                                            <span class="byline"><font face="Microsoft YaHei" style='line-height:1.4'>帆天科技</font></span>
+                                            <br>
+                                            <span class="byline"><font face="Microsoft YaHei" style='line-height:1.4'>满足客户各种深度定制需求</font></span>
+                                            <br>
+                                            <span class="byline"><font face="Microsoft YaHei" style='line-height:1.4'>多个成功项目案例 值得您的信赖</font></span>
+                                        </div>
+                                        <ul class="actions" style='height:80px'>
+                                            <li><a href="about.html" class="button"><font face="Microsoft YaHei" style='line-height:1.4'>了解更多</font></a></li>
+                                        </ul>
+                                    </div>
+                            </div>
+                            <div class="gradient dark"></div>
+                        </li>
+                        
+                    </ul>
+                   
+                </div>
+                <!--  END Slider  -->
+                <div id="home-wrap" class="content-section fullpage-wrap">
+                    <!-- Abous us -->
+                    
+                        <div id="two-column" class="container" >
+                            <div class="title">
+                                <img src="assets/img/logo-fint.png" width="350m" align="middle" style='margin:20px 0'>
+                                <br>
+                                <h2 style='margin-bottom:20px'><font face="Microsoft YaHei" style='line-height:1'>为中小基金提供一站式的基金服务</font></h2>
+                                <span class="byline"><font face="Microsoft YaHei">前中后台服务</font></span>
+                            </div>
+                            <div class="tbox1 tbox">
+                                <p style="font-size:2em;font-family:Microsoft YaHei">基金中后台服务</p>
+                                <br>
+                                <p style="font-family:Microsoft YaHei" class='overHiden'>我国基金行业未来数年的挑战巨大。每个基金都需要今天做出艰难的抉择，以便迎接未来的挑战。基金在技术快速变化，监管不确定性，客户期望提高以及激烈的竞争压力下生存。为此，如何凸显自身产品能力 您需要一个值得信赖的基金服务合作伙伴来支持您的基金的日常管理。
+
+                                    帆天国际作为一间现代化的基金服务公司，用最新最切合的科技以提供全面及专业的对冲基金服务，涵盖整个投资及营运过程，包括您的中后台，基金会计，投资者服务和监管报告的不同要求。
+                                    帆天国际基金中后台服务是指根据《基金业务外包服务指引（试行）》，公司作为独立第三方，接受基金管理人的委托，为基金管理人提供基金份额登记、估值核算等基础业务服务，同时为基金管理人提供清算交收、风险及绩效分析、客户报告等外包增值服务，满足基金管理人全方位的、个性化的需求。
+                                    </p>
+                                <a href="services1.html" class="button button-alt">More Info</a>
+                            </div>
+                            <div class="tbox2 tbox">
+                                <p style="font-size:2em;font-family:Microsoft YaHei">基金交易系统</p>
+                                <br>
+                                <p style="font-family:Microsoft YaHei" class='overHiden'>基金交易管理系统就是一个把市场上海量的基金信息和交易手段有效得组织起来并以有序的方式呈现给前端客户的一个管理系统。系统主要实现对基金交易的各个模块进行完整的设计与简化操作难度，从而为用户提供一个简单、实用、快速的基金交易管理系统。</p>
+                                <a href="services2.html" class="button button-alt">More Info</a>
+                            </div>
+                            <div class="tbox3 tbox">
+                                <p style="font-size:2em;font-family:Microsoft YaHei">软件定制开发</p>
+                                <br>
+                                <p style="font-family:Microsoft YaHei" class='overHiden'>帆天国际参考行业最佳实践，为我们的客户提供解决方案，搭建高效流程，摒弃冗余职能和低效事务，协助管理者更早获得行业洞见，使团队的宝贵精力投入在最有价值的工作上，从而帮助我们的客户创造驱动世界的好产品。</p>
+                                <a href="services3.html" class="button button-alt">More Info</a>
+                            </div>
+                            <div class="tbox4 tbox">
+                                <p style="font-size:2em;font-family:Microsoft YaHei">数字货币交易系统开发</p>
+                                <br>
+                                <p style="font-family:Microsoft YaHei" class='overHiden'>数字货币交易系统，连接多个数字货币交易所，能够同时在多个交易所进行实盘交易，获取实时行情数据。</p>
+                                <a href="services4.html" class="button button-alt">More Info</a>
+                            </div>
+                            <div style='clear:both'></div>
+                            <div class="tbox5 tbox">
+                                <p style="font-size:2em;font-family:Microsoft YaHei">记账报税 税务筹划</p>
+                                <br>
+                                <p style="font-family:Microsoft YaHei" class='overHiden'>超过规定期仍未报税的，会产生相应的罚款、滞纳金，公司会被监控，对以后公司购买发票及其他税务处理，以及公司法人等方面造成信用不良等负面影响。工商、税务已经于2015年6月1日于中国人民银行个人信用征信系统联网！公司未注销状态下，必须做账报税，否则法人及股东将有信用污点，具体影响有：</p>
+                                <a href="services5.html" class="button button-alt">More Info</a>
+                            </div>
+                            <div class="tbox6 tbox">
+                                <p style="font-size:2em;font-family:Microsoft YaHei">深圳入户代办</p>
+                                <br>    
+                                <p style="font-family:Microsoft YaHei" class='overHiden'>招调工入户 留学生 毕业生
+
+                                        专业实体公司 多年代办经验<br>
+                                        可来公司考察 可签协议保障
+                                        </p>
+                                <a href="services6.html" class="button button-alt">More Info</a>
+                            </div>
+                            <!-- <div style='clear:both'></div> -->
+                            <!-- <div class="tbox7 tbox">
+                                <p style="font-size:2em;font-family:Microsoft YaHei">前端交易平台</p>
+                                <br>
+                                <p style="font-family:Microsoft YaHei">帆天国际将金融科技融入日常金融服务，将高科技、智能化、个性化的金融服务模式作为传统金融服务模式的衍生与替代，同时以此为基础提供相应金融产品。</p>
+                                <a href="services.html" class="button button-alt">More Info</a>
+                            </div> -->
+                        </div>
+                    
+                    
+                    
+                    <!-- Services -->
+                    <div class='aboutus1'>
+                        <div class="container">
+                            <!-- Section Image -->
+                            
+                                <div class="title">
+                                    <h2 style="font-family:Microsoft YaHei;color:white">帆天国际</h2>
+                                    <span class="byline" style="font-family:Microsoft YaHei">帆天国际自成立以来一直积极履行企业社会责任，秉承服务社会</span>
+                                </div>
+                                <p style="font-family:Microsoft YaHei;color:white">帆天国际集团立志于成为中国首屈一指的金融服务企业。我们致力于跨地域、多维度、多样化的投资策略，搭建全球投资平台，锚定世界优质投资标杆，着力中国资本在国际舞台的广泛参与。</p>
+                                <!--
+                                <ul class="actions">
+                                    <li><a href="#" class="button">Etiam posuere</a></li>
+                                </ul>
+                                -->
+                            
+                            <!-- END Section Image -->
+                        </div>
+                    </div>
+                    <!-- END Services -->
+                    <!-- Video Section -->
+                    <div id="contactus">
+                        <div class="container">
+                            <h2 style="font-family:Microsoft YaHei">联系我们</h2>
+                            </br>
+                            <div id="two-column" class="container">
+                                <div class="tbox2 tbox" style='height:300px;width:300px;'>
+                                    <div id="allmap" style='height:300px;width:300px;'></div>
+                                </div>
+                                <div class="tbox1 tbox">
+                                    <br/>
+                                    <p style="font-family:Microsoft YaHei;font-size:125%;font-weight:200;box-sizing: content-box;"><strong>深圳前海帆天科技（国际）有限公司</strong></p>
+                                    <p style="font-family:Microsoft YaHei;font-size:100%;font-weight:200;">地址：深圳市南山区科技园海天二路易思博软件大厦1711</p>
+                                    <p style="font-family:Microsoft YaHei;font-size:100%;font-weight:200;">电话：0755-86660248</p>
+                                    <p style="font-family:Microsoft YaHei;font-size:100%;font-weight:200;"> +852-96381203</p>
+                                    <p style="font-family:Microsoft YaHei;font-size:100%;font-weight:200;">邮箱：support@fintgroup.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Video Section -->
+                   
+                    <img href="#" src="assets/img/arrowUP.png" class="scrollToTop"></img>
+
+                    <div id="copyright" class="container" style='width:100%;'>
+                        <p>&copy; 版权所有：前海帆天国际科技(深圳)有限公司  粤ICP备. <a href="http://www.miitbeian.gov.cn/">17023249号</a>.</p>
+                    </div>
+        <!--  END Footer. Class fixed for fixed footer  -->
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="assets/js/jquery.min.js"></script>
+        
+        <!-- All js library -->
+        <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+        <!-- <script src="assets/js/jquery.flexslider-min.js"></script> -->
+        <!-- <script src="assets/js/owl.carousel.min.js"></script> -->
+        <script src="assets/js/isotope.min.js"></script>
+        <!-- <script src="assets/js/jquery.magnific-popup.min.js"></script> -->
+
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <!-- <script src="assets/js/smooth.scroll.min.js"></script> -->
+        <script src="assets/js/jquery.appear.js"></script>
+        <script src="assets/js/jquery.countTo.js"></script>
+        <script src="assets/js/jquery.scrolly.js"></script>
+        <script src="assets/js/plugins-scroll.js"></script>
+        <script src="assets/js/imagesloaded.min.js"></script>
+        <script src="assets/js/pace.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script type="text/javascript">
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");
+	var point = new BMap.Point(116.331398,39.897445);
+	map.centerAndZoom(point,12);
+	// 创建地址解析器实例
+	var myGeo = new BMap.Geocoder();
+	// 将地址解析结果显示在地图上,并调整地图视野
+	myGeo.getPoint("深圳市南山区科技园海天二路易思博软件大厦", function(point){
+		if (point) {
+			map.centerAndZoom(point, 16);
+			map.addOverlay(new BMap.Marker(point));
+		}else{
+			alert("您选择地址没有解析到结果!");
+		}
+	}, "深圳市");
+	
+	
+</script>
+
+    </body>
+</html>

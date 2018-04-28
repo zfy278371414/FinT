@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+        <head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta name='description' content='帆天国际'>
+                <meta name='keywords' content='帆天国际'>
+                <meta name='author' content='帆天国际'>
+                <meta content=''>
+                <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+                <title>帆天国际</title>
+                <style>
+                    h1,h2,h3{
+                        margin-bottom:20px!important;
+                        
+                    }
+                </style>
+                <!-- Bootstrap -->
+                <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+        
+                <!-- Optional theme -->
+                <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-theme.min.css">
+                <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=AufmnPFxvKm3TPSfw8T7HXj9PIrewvEM"></script>
+                <!-- Custom css -->
+                <link rel="stylesheet" href="assets/css/style.css">
+                <link rel="stylesheet" href='assets/css/default.css'>
+                <!-- Font Awesome -->
+                <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+                
+                <link rel="stylesheet" href="assets/css/ionicons.min.css">
+                
+                <!-- Flexslider -->
+                <link rel="stylesheet" href="assets/css/flexslider.css">
+                
+                <!-- Owl -->
+                <link rel="stylesheet" href="assets/css/owl.carousel.css">
+                
+                <!-- Magnific Popup -->
+                <link rel="stylesheet" href="assets/css/magnific-popup.css">
+                <link rel='stylesheet' href='assets/fonts/iconfont/iconfont.css'
+                
+        
+                <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+                <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+                <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+                <![endif]-->
+            </head>
+            <body>
+              
+                <!--  loader  -->
+                <div id="myloader">
+                    <!-- <div class="loader">
+                        <div class="grid">
+                            <div class="cube cube1"></div>
+                            <div class="cube cube2"></div>
+                            <div class="cube cube3"></div>
+                            <div class="cube cube4"></div>
+                            <div class="cube cube5"></div>
+                            <div class="cube cube6"></div>
+                            <div class="cube cube7"></div>
+                            <div class="cube cube8"></div>
+                            <div class="cube cube9"></div>
+                        </div>
+                    </div> -->
+                    <div class="loadEffect">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                    </div>
+                </div>
+                
+                <!--  Header & Menu  -->
+                <header id="header">
+            
+                        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                                <div class="container" style='position:relative'>
+                                    <!-- Brand and toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed clickTab" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" isShow='false'>
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            
+                                        </button>
+                                        <a class="navbar-brand" href="#" style="color:white;"><font face="Microsoft YaHei">FinT 帆天国际</font></a>
+                                    </div>
+                                    <div class='toggleTab' style='display:none;position:absoluted;top:50px;right:0;width:200px;background:#222'>
+                                            <ul class="nav navbar-nav" style='margin:0'>
+                                                <li style='height:50px'>
+                                                    <a href="#"  ><font face="Microsoft YaHei">首页</font></a>
+                                                </li>
+                                               <li style="height:50px;"><a href="services1.html" style="text-decoration:none;" >基金中后台服务</a></li>			
+                                                        <li style="height:50px;"><a href="services2.html" style="text-decoration:none;">基金交易系统</a></li>
+                                                        <li style="height:50px;"><a href="services3.html" style="text-decoration:none;color:rgb(247, 153, 57)">软件定制开发</a></li>
+                                                        <li style="height:50px;"><a href="services4.html" style="text-decoration:none;">数字货币交易系统开发</a></li>
+                                                        <li style="height:50px;"><a href="services5.html" style="text-decoration:none;">记账报税,税务筹划</a></li>
+                                                        <li style="height:50px;"><a href="services6.html" style="text-decoration:none;">深圳入户代办</a></li>
+                                                   
+                                                <!-- <li>
+                                                        <a href="news.html" id="contactusBtn" style="color:white;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">新闻资讯</font></a>
+                                                </li> -->
+                                                
+                                                <li>
+                                                    <a href="about.html" id="aboutusBtn"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">关于我们</font></a>
+                                                </li>
+                                                <li>
+                                                    <a href="contact.html" id="contactusBtn"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">联系我们</font></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class="navbar-collapse collapse"  style="float: right; height: 1px;" aria-expanded="false">
+                                        <ul class="nav navbar-nav">
+                                            <li>
+                                                <a href="#" id="header-wrapperBtn" style="color: white;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">首页</font></a>
+                                            </li>
+                                            <li style="position:relative;z-index:2">
+                                                <a id="serviceBtn"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed " aria-expanded="false" style='color:rgb(247, 153, 57)'><font face="Microsoft YaHei">服务提供</font></a>
+                                                <ol style="position: absolute; top: 50px; left: 0px; line-height: 50px; background: white; color: black; border-top: 5px solid rgb(247, 153, 57); display: none;">
+                                                   
+                                                    <li style="width:180px;height:50px;border-bottom:1px solid #ececec;padding-left:20px"><a href="services1.html" style="text-decoration:none;">基金中后台服务</a></li>			
+                                                    <li style="width:180px;height:50px;border-bottom:1px solid #ececec;padding-left:20px"><a href="services2.html" style="text-decoration:none;">基金交易系统</a></li>
+                                                    <li style="width:180px;height:50px;border-bottom:1px solid #ececec;padding-left:20px"><a href="services3.html" style="text-decoration:none;color:rgb(247, 153, 57)">软件定制开发</a></li>
+                                                    <li style="width:180px;height:50px;border-bottom:1px solid #ececec;padding-left:20px"><a href="services4.html" style="text-decoration:none;">数字货币交易系统开发</a></li>
+                                                    <li style="width:180px;height:50px;border-bottom:1px solid #ececec;padding-left:20px"><a href="services5.html" style="text-decoration:none;">记账报税,税务筹划</a></li>
+                                                    <li style="width:180px;height:50px;border-bottom:1px solid #ececec;padding-left:20px"><a href="services6.html" style="text-decoration:none;">深圳入户代办</a></li>
+                                                </ol>
+                                            </li>
+                                            <!-- <li>
+                                                    <a href="news.html" id="contactusBtn" style="color:white;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">新闻资讯</font></a>
+                                            </li> -->
+                                            
+                                            <li>
+                                                <a href="about.html" id="aboutusBtn" style="color:white;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">关于我们</font></a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html" id="contactusBtn" style="color:white;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="collapsed" aria-expanded="false"><font face="Microsoft YaHei">联系我们</font></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                   
+                                    <!-- /.navbar-collapse -->
+                                </div>
+                                <!-- /.container -->
+                            </nav>
+                    
+                </header>
+        <!--  END Header & Menu  -->
+            
+        <!--  Main Wrap  -->
+        <div id="main-wrap">
+            <!--  Page Content  -->
+            <div id="page-content" class="header-static">
+                <!--  Page Header  -->
+                <div id="page-header" class="secondary-background">
+                    <div class="container">
+                        <div class="row no-margin">
+                            <div class="text" style='text-align:center'>
+                                <h4 class="white " style='text-align:left'>服务提供</h4>
+                                <!-- <ul class="breadcrumb white">
+                                    <li><a href="#">网站首页</a></li>
+                                    <li>服务提供</li>
+                                </ul> -->
+                                <h2 class='white' style='margin-top:20px'>软件定制开发</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  END Page Header  -->
+                <div id="home-wrap" class="content-section fullpage-wrap service-main">
+                    <div class='container' style='margin-top:20px'>
+                        
+                        <p>帆天国际参考行业最佳实践，为我们的客户提供解决方案，搭建高效流程，摒弃冗余职能和低效事务，协助管理者更早获得行业洞见，使团队的宝贵精力投入在最有价值的工作上，从而帮助我们的客户创造驱动世界的好产品。</p>
+                    </div>
+                    <div class='container software'>
+                        <h3>流程介绍</h3>
+                        
+                        <ul>
+                            <li>
+                                <p>1.需求沟通，分析</p>
+                                <p>一个软件系统开发可不是说有想法找人就能做出来的，是需要和相关领域的产品经理进行需求讨论梳理分析，对软件需要实现的各个功能进行详细需求分析。主要确定软件的开发目标及其可行性。</p>
+                            
+                            </li>
+                            <li>
+                                <p>2.原型图设计</p>
+                                <p>根据第一步需求分析的结果，对整个软件系统进行设计，如系统框架设计、数据库设计等。</p>
+                            </li>
+                            <li><p>3.前端开发</p>
+                                <p>前端的开发中，在页面的布局时， HTML将元素进行定义，CSS对展示的元素进行定位，再通过JavaScript实现相应的效果和交互。</p>
+                            </li>
+                            <li><p>4.后端开发</p>
+                                <p>后端开发一开始要考虑好后台的架构，接着则来自于数据安全，用户隐私。对于特定的系统，我们优先保护用户的隐私。最后是系统稳定性。</p>
+                            </li>
+                            <li><p>5.测试</p>
+                                <p>在软件设计完成之后要进行严密的测试，一发现软件在整个软件设计过程中存在的问题并加以纠正。</p>
+                            </li>
+                            <li>
+                                <p>6.维护</p>
+                                <P>针对已完成对软件的研制（分析、设计、编码和测试）工作并交付客户使用以后，我们会根据软件运行的情况，对软件进行适当修改，以适应新的要求，以及纠正运行中发现的错误。</P>
+                            </li>
+                        </ul>
+                        
+                        <h3>服务保障</h3>
+                        <ul class='service-gua' style='overflow:hidden'>
+                            <li><p><i class='iconfont'>&#xe7ad;</i>产品BUG 漏洞修复</p></li>
+                            <li><p><i class='iconfont'>&#xe7ad;</i>产品更新 维护服务</p></li>
+                            <li><p><i class='iconfont'>&#xe7ad;</i>产品迭代 换代服务</p></li>
+                            <li><p><i class='iconfont'>&#xe7ad;</i>服务器运营</p></li>
+                            <div style='clear：both'></div>
+                            <li><p><i class='iconfont'>&#xe7ad;</i>防作弊监管</p></li>
+                            <li><p><i class='iconfont'>&#xe7ad;</i>产品配置调控</p></li>
+                            <li><p><i class='iconfont'>&#xe7ad;</i>提供对接</p></li>
+                            <li><p><i class='iconfont'>&#xe7ad;</i>产品使用培训</p></li>
+                            <li><p><i class='iconfont'>&#xe7ad;</i>服务器部署</p></li>
+                        </ul>
+                        <h3>成功案例</h3>
+                        <img style='width:30%;margin:0 auto;display:block'  src='assets/img/qy.jpg'>
+                        <p class='textCenter'>权盈系统app页面</p>
+                        <img  style='width:50%;margin:0 auto;display:block' src='assets/img/qianhui.png'>
+                        <p class='textCenter'>千惠后台管理PC页面</p>
+                        <img style='width:50%;margin:0 auto;display:block' src='assets/img/client.png'>
+                        <p class='textCenter'>客户端展示</p>
+                        <p>帆天不仅仅提供交易系统，我们可以对接很多领域，比如数字货币、股票期货和场外衍生品。
+                            我们所研发的各个交易系统界面友好，操作简单。风险实时把控的同时支持杠杆模式，数据稳定性极好。以图一合作商权盈为例，可以设置可交易的股票，设定手续费和佣金，支持代理商，支持个性化定制。
+                        </p>
+                        <h3>搭配项目管理服务，倍增企业核心竞争力</h3>
+                        <h3>项目管理面临的主要问题</h3>
+                        <ul style='color:#757575'>
+                            <li><p>资源利用率和工作效率低，响应市场需求慢，运营成本居高不下</p></li>
+                            <li><p>项目业务流程各环节不够透明和可控，项目风险大，应变能力弱</p></li>
+                            <li><p>领导难于及时获取各类数据报表，决策的盲目性和随意性大</p></li>
+                            <li><p>难于跨部门沟通协作，项目团队工作目标不一致，执行力差</p></li>
+                            <li><p>难于有效跟踪项目进度和各种问题，了解项目具体情况往往滞后</p></li>
+                            <li><p>汇报任务执行情况不方便，对员工的工作绩效评估缺乏数据支持</p></li>
+                            <li><p>难于随时随地获取项目的各种信息、数据和文档，办公空间受限</p></li>
+                            <li><p>难于沉淀、共享和重复利用业务知识，业务不易扩张和持续发展</p></li>
+                        </ul>
+                        <h3>项目管理流程介绍</h3>
+                        <img style='width:100%;margin:0 auto 20px;display:block' src='assets/img/liuchentu.png'>
+                        <p>我们帮助您管理项目启动、计划、执行、监控和收尾的整个生命周期，覆盖进度、质量、成本、资源、风险等项目管理的各个要素。帮助企业构建集成项目、流程、知识的信息化平台，规范项目业务操作流程，实现决策、管理、执行一体化运作。</p>
+
+                    </div>
+
+
+                   <div class='fintOther' style='padding:30px 0'>
+                        <div class='container '>
+                                <h4 style='margin-bottom:20px'><b>售后保障:</b></h4>
+                                <p>我们的承诺:</p>
+                                <p>关于服务质量的反馈，我们会在第一时间专人处理。保证及时解决您的问题。</p>
+                                <p>处理流程:</p>
+                                <p>服务中心遇到困难→使用在线旺旺/客服热线电话等方式联系我们→平台核实情况并立马处理</p>
+                                <h4 style='margin-bottom:20px'><b>温馨提示:</b></h4>
+                                <P>请尊重我们的劳动，工作人员付出的时间与心血无法像实物那样退货，如果您有不满意的地方，在您的配合下，我们会尽力改到您满意为止。</P>
+                                <p>由于系统开发、项目管理等产品属于定制产品，不同客户要求不同，产品价格不同、功能配置等也有所不同，故套餐内容均有所不同，页面介绍仅供参考，具体套餐内容请详询客服，以与客服沟通的聊天记录为准。</p>
+                                <p>部分产品支持一定期限内退款，部分产品不支持退款，具体详询客服！</p>
+                            </div>
+                   </div>
+                   
+                    <!-- Section Partners -->
+                    <div class="container">
+                        <div class="row no-margin">
+                            <div class="col-md-12 padding-leftright-null">
+                                <div class="partners">
+                                    <div class="col-xs-6 col-sm-4 col-md-2 text padding-leftright-null">
+                                        <h3>我们的客户</h3>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-2 partner">
+                                        <img class="img-responsive" src="assets/img/kehu1.png" alt="">
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-2 partner">
+                                        <img class="img-responsive" src="assets/img/kehu2.png" alt="">
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-2 partner">
+                                        <img class="img-responsive" src="assets/img/kehu3.png" alt="">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Section Partners -->
+                </div>
+            </div>
+            <!--  END Page Content -->
+        </div>
+        <!--  Main Wrap  -->
+        
+
+        <!--  Footer  -->
+        <img href="#" src="assets/img/arrowUP.png" class="scrollToTop" ></img>
+
+        <div id="copyright" class="container" style='width:100%;'>
+            <p>&copy; 版权所有：前海帆天国际科技(深圳)有限公司  粤ICP备. <a href="http://www.miitbeian.gov.cn/">17023249号</a>.</p>
+        </div>
+        <!--  END Footer. Class fixed for fixed footer  -->
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- All js library -->
+        <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.flexslider-min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/isotope.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!---<script src="http://ditu.google.cn/maps/api/js?v=3.exp&signed_in=false"></script>--->
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <script src="assets/js/smooth.scroll.min.js"></script>
+        <script src="assets/js/jquery.appear.js"></script>
+        <script src="assets/js/jquery.countTo.js"></script>
+        <script src="assets/js/jquery.scrolly.js"></script>
+        <script src="assets/js/plugins-scroll.js"></script>
+        <script src="assets/js/imagesloaded.min.js"></script>
+        <script src="assets/js/pace.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
+
